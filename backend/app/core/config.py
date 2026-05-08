@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     secret_key: str
 
     # Database
-    database_url: str = "sqlite+aiosqlite:///../data/db/homehub.db"
+    database_url: str = "sqlite+aiosqlite:////Users/vernonmyers/Documents/vscode/HomeHub/data/db/homehub.db"
 
     # CORS
     allowed_origins: str = "https://homehub.local"

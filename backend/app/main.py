@@ -99,10 +99,14 @@ async def health_check():
     }
 
 
-# TODO: Include routers
-# from .routers import auth, users, calendar, integrations, ws
-# app.include_router(auth.router, prefix="/api/auth", tags=["auth"])
-# app.include_router(users.router, prefix="/api/users", tags=["users"])
-# app.include_router(calendar.router, prefix="/api/calendar", tags=["calendar"])
-# app.include_router(integrations.router, prefix="/api/integrations", tags=["integrations"])
-# app.include_router(ws.router, prefix="/ws", tags=["websocket"])
+# Include routers
+from .routers import auth, users
+
+app.include_router(auth.router)
+app.include_router(users.router)
+
+# TODO: Include additional routers
+# from .routers import calendar, integrations, ws
+# app.include_router(calendar.router)
+# app.include_router(integrations.router)
+# app.include_router(ws.router)
