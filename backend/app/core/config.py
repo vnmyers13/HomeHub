@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     """Application settings loaded from .env file."""
 
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file="../.env",
         env_file_encoding="utf-8",
         case_sensitive=False,
     )
@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     secret_key: str
 
     # Database
-    database_url: str = "sqlite+aiosqlite:////data/db/homehub.db"
+    database_url: str = "sqlite+aiosqlite:///../data/db/homehub.db"
 
     # CORS
     allowed_origins: str = "https://homehub.local"

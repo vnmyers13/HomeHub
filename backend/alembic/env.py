@@ -14,7 +14,7 @@ from app.core.database import Base
 from app.core.config import settings
 
 # Import all models here to ensure they're registered with Base.metadata
-from app.models.user import User
+from app.models.auth import Family, User, Session
 from app.models.room import Room
 from app.models.log import Log
 
