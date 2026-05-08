@@ -10,6 +10,25 @@ Version numbers follow `MAJOR.MINOR` format. MINOR increments by 1 each release.
 ## [Unreleased]
 
 ### Added
+- Sprint 2 foundation: Auth models (Family, User, Session)
+- Python 3.12 development environment support
+- Alembic configuration for auth models
+
+### Changed
+- Updated configuration paths for local development
+- Fixed model imports for Sprint 2 compatibility
+
+### In Progress
+- Sprint 2: Authentication & User Management (T2.2-T2.4 pending)
+  - Auth API endpoints (setup, login, PIN login, logout, me)
+  - Users API (CRUD operations, avatar upload)
+  - Frontend pages (SetupWizard, Login, ManageUsers, components)
+
+---
+
+## [0.1.0] - 2026-05-07
+
+### Added
 - Initial MVP: shared family calendar with ICS feed subscriptions
 - Internal calendar: create/edit/delete events with recurrence support
 - Family member profiles: role-based access, PIN and password login
@@ -22,6 +41,7 @@ Version numbers follow `MAJOR.MINOR` format. MINOR increments by 1 each release.
 - Docker Compose deployment on AMD64 Linux
 - Raspberry Pi kiosk boot script for wall display
 - Daily automated SQLite backup
+- Sprint 1 infrastructure complete
 
 ---
 

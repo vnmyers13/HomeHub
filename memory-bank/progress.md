@@ -45,9 +45,11 @@
 - [ ] No conflict detection for same-timestamp events from different feeds
 
 ### Current Status
-- **Sprint Completion**: Review sprint_s1.json through sprint_s6.json for completed work
-- **Version**: MAJOR.MINOR format, MINOR increments by 1 each release
-- **Next Release**: Bump version via release checklist Phase P2
+- **Active Sprint**: Sprint 2 (Authentication & User Management) - Foundation Complete
+- **Sprint Progress**: T2.1 models complete, T2.2-T2.4 pending
+- **Version**: 0.1.0 (MAJOR.MINOR.PATCH format)
+- **Recent Commit**: 7784a12 - Sprint 2 auth models and configuration
+- **Next Steps**: Complete T2.2 (Auth API), T2.3 (Users API), T2.4 (Frontend pages)
 - **Backlog**: See TODO.md for current priorities
 
 ## Evolution of Project Decisions
