@@ -26,9 +26,9 @@ export interface PinLoginRequest {
 export interface User {
   id: string;
   display_name: string;
-  role: string;
+  role: 'admin' | 'co_admin' | 'teen' | 'child' | 'guest';
   color_hex: string;
-  ui_mode: string;
+  ui_mode: 'standard' | 'child' | 'kiosk';
   avatar_type: string;
   avatar_value: string;
   family_id: string;

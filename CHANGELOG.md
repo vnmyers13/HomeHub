@@ -10,19 +10,22 @@ Version numbers follow `MAJOR.MINOR` format. MINOR increments by 1 each release.
 ## [Unreleased]
 
 ### Added
-- Sprint 2 foundation: Auth models (Family, User, Session)
+- Sprint 2 complete: Authentication & User Management
+  - Database migration for auth models (Family, User, Session)
+  - Auth API: setup, login (password), login (PIN with rate limiting), logout, me
+  - Users API: CRUD operations, avatar upload with thumbnail generation
+  - SetupWizard: 3-step family setup flow with timezone selection
+  - Login page: user selection grid, PIN pad, password input
+  - ManageUsers admin page: create/edit/delete family members
+  - OfflineBanner component: offline detection and notification
+  - InstallPrompt component: PWA install prompt for Chrome/Edge and iOS Safari
 - Python 3.12 development environment support
 - Alembic configuration for auth models
 
 ### Changed
+- Updated App.tsx with proper routing and auth flow
 - Updated configuration paths for local development
 - Fixed model imports for Sprint 2 compatibility
-
-### In Progress
-- Sprint 2: Authentication & User Management (T2.2-T2.4 pending)
-  - Auth API endpoints (setup, login, PIN login, logout, me)
-  - Users API (CRUD operations, avatar upload)
-  - Frontend pages (SetupWizard, Login, ManageUsers, components)
 
 ---
 
